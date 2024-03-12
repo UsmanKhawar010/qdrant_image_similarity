@@ -1,0 +1,9 @@
+
+fastapi
+uvicorn
+numpy
+matplotlib
+imgbeddings
+qdrant_client
+jinja2
+python-multipart

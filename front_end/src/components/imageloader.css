@@ -1,0 +1,124 @@
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+    text-align: center;
+
+    height: auto;
+    width: auto;
+}
+
+.unveil-text p {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+    /* Add margin-bottom */
+}
+
+.unveil-text h2 {
+    font-size: 36px;
+    /* Adjust font size as needed */
+    font-weight: bold;
+    margin-bottom: 10px;
+    /* Add margin-bottom */
+}
+
+.container.uploading {
+    border-color: #007bff;
+}
+
+.upload-form {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.upload-form input[type="file"] {
+    margin-right: 10px;
+}
+
+.upload-form button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.upload-form button:hover {
+    background-color: #0056b3;
+}
+
+.upload-status {
+    color: red;
+}
+
+.result-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 20px;
+    /* Adjust margin-top as needed */
+    width: 70%;
+    height: 500px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.custom-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 30px;
+    /* Adjust margin-top as needed */
+    width: 70%;
+    height: 500px;
+
+}
+
+/* Rest of your CSS rules */
+
+.result-container img {
+    width: 10%;
+    height: auto;
+    display: block;
+
+
+    /* Add margin at the bottom of each image */
+}
+
+.celebrity-matching-line {
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    font-size: 18px;
+    color: #666;
+    font-weight: bold;
+    /* Make the text bold */
+    font-family: 'Arial', sans-serif;
+    /* Choose a stylish font */
+}
+
+.home-button {
+    margin-top: 20px;
+    /* Add margin-top to the go back button */
+    background-color: #4caf50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}

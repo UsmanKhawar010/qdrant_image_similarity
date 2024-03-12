@@ -1,0 +1,9 @@
+# Use the official Qdrant client image as a base
+FROM qdrant/qdrant
+
+# Expose the necessary ports for Qdrant
+EXPOSE 6333
+EXPOSE 6334
+
+# Mount the volume for Qdrant storage
+VOLUME /qdrant/storage

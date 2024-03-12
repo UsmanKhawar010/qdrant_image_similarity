@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  frontend:
+    image: myfront_end  # You need to build this image or specify its actual image name
+    ports:
+      - "3000:3000"
+
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile_fastapi
+    image: my_fastapi_image  # Specify an image name
+    ports:
+      - "8000:8000"
+    depends_on:
+      - qdrant
+
+  qdrant:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile_qdrant
+    image: my_qdrant_image  # Specify an image name
+    ports:
+      - "6333:6333"
+      - "6334:6334"
+    volumes:
+      - "D:/docker example/back_end/qdrant_storage:/qdrant/storage"
